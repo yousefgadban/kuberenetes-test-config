@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: yousefgadbandocker/webapp:1.0
+        image: codewithmosh/hello-docker
         ports:
         - containerPort: 5020
 ---
