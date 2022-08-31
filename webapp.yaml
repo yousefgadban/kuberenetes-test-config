@@ -16,25 +16,9 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: yousefgadbandocker/my-app:1.0
+        image: yousefgadbandocker/webapp:1.0
         ports:
         - containerPort: 5020
-        env:
-        - name: USER_NAME
-          valueFrom:
-            secretKeyRef:
-              name: mongo-secret
-              key: mongo-user
-        - name: USER_PWD
-          valueFrom:
-            secretKeyRef:
-              name: mongo-secret
-              key: mongo-password 
-        - name: DB_URL
-          valueFrom:
-            configMapKeyRef:
-              name: mongo-config
-              key: mongo-url
 ---
 apiVersion: v1
 kind: Service
