@@ -7,7 +7,7 @@ metadata:
     app: demo-hello-app
 spec:
   contailners:
-  - name: hello-app
+  - name: hello-container
     image: codewithmosh/hello-docker
     ports:
       - containerPort: 80
@@ -22,7 +22,7 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    port: 80
+  - port: 80
     targetPort: 80
   selector:
     name: hello-pod
