@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: hello-app
-    image: codewithmosh/hello-docker
+    image: yousefgadbandocker/hello:1.9
     ports:
     - containerPort: 5020
 ---
